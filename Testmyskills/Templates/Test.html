@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>TestMyskills</title>
+</head>
+<body>
+    <nav class ="navbar navbar-inverse navbar-fixed-top">
+        <div class = "container-fluid">
+            <div class="navbar-header">
+                <a href="#" class ="navbar-brand">TestMYSkills</a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Take_myTest<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/Test">Python</a></li>
+                            <li><a href="#">MySql</a></li>
+                            <li><a href="#">HTML</a></li>
+                          </ul>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+            <ul class ="nav navbar-nav navbar-right">
+                <li><a href="/Logout"><i class="glyphicon glyphicon-log-out"></i>Logout</a></li>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center><h1>Python MCQ</h1></center>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-2" style="background-color:lavender;"><a href="/level_1"><b>Level-1</a></b></div>
+          <div class="col-md-2" style="background-color:lavender;"><a href="/level_2"><b>Level-2</a></b></div>
+          <div class="col-md-2" style="background-color:lavender;"><a href="/level_3"><b>Level-3</a></b></div>
+          <div class="col-md-2" style="background-color:lavender;"><a href="/level_4"><b>Level-4</a></b></div>
+          <div class="col-md-2" style="background-color:lavender;"><a href="/level_5"><b>Level-5</a></b></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color:lavender;"><a href="/level_6"><b>Level-6</a></b></div>
+            <div class="col-md-2" style="background-color:lavender;"><a href="/level_7"><b>Level-7</a></b></div>
+            <div class="col-md-2" style="background-color:lavender;"><a href="/level_8"><b>Level-8</a></b></div>
+            <div class="col-md-2" style="background-color:lavender;"><a href="/level_9"><b>Level-9</a></b></div>
+            <div class="col-md-2" style="background-color:lavender;"><a href="/level_10"><b>Level-10</a></b></div>
+          </div>
+      </div>

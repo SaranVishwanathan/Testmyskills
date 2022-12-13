@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>TestMyskills</title>
+</head>
+<body>
+    <nav class ="navbar navbar-inverse navbar-fixed-top">
+        <div class = "container-fluid">
+            <div class="navbar-header">
+                <a href="#" class ="navbar-brand">TestMYSkills</a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li class = "active"><a href="/home">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Take_myTest<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/Test">Python</a></li>
+                            <li><a href="#">MySql</a></li>
+                            <li><a href="#">HTML</a></li>
+                          </ul>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+            <ul class ="nav navbar-nav navbar-right">
+                <li><a href="/Logout"><i class="glyphicon glyphicon-log-out"></i>Logout</a></li>
+            </ul>   
+        </div>
+    </nav>
+  <br>
+  <br>
+  <br>
+<form>
+
+    <div class ="container-fluid well">
+    <p> <strong>  31. What will be the output of the following Python code snippet?<br>
+
+        for i in [1, 2, 3, 4][::-1]:
+            print (i) </strong> </p> 
+        
+          <input type="radio" id="31opt1" name="qn31" value="4 3 2 1">  4 3 2 1
+          <input type="radio" id="31opt2" name="qn31" value= " error" >  error
+          <input type="radio" id="31opt3" name="qn31" value="1 2 3 4"> 1 2 3 4
+          <input type="radio" id="31opt4" name="qn31" value="none of the mentioned"> none of the mentioned
+        </div>
+
+        <div class ="container-fluid well">
+        <p> <strong>  32. What will be the output of the following Python statement?<br>
+        
+        >>>"a"+"bc"</strong> </p> 
+        
+          <input type="radio" id="32opt1" name="qn32" value="  bc">   bc
+          <input type="radio" id="32opt2" name="qn32" value= " abc" >  abc
+          <input type="radio" id="32opt3" name="qn32" value="a"> a
+          <input type="radio" id="32opt4" name="qn32" value="bca"> bca
+        </div>
+
+         <div class ="container-fluid well">
+        <p> <strong>  33. Which function is called when the following Python program is executed?<br>
+        
+        f = foo()
+        format(f)</strong> </p> 
+        
+          <input type="radio" id="33opt1" name="qn33" value="str()"> str()
+          <input type="radio" id="33opt2" name="qn33" value= "format()" > format()
+          <input type="radio" id="33opt3" name="qn33" value="__str__()"> __str__()
+          <input type="radio" id="33opt4" name="qn33" value="__format__()"> __format__()
+        
+        </div>
+
+        <div class ="container-fluid well">
+        <p> <strong>  34. Which one of the following is not a keyword in Python language? </strong> </p> 
+        
+          <input type="radio" id="34opt1" name="qn34" value="pass"> pass
+          <input type="radio" id="34opt2" name="qn34" value= " eval" >  eval
+          <input type="radio" id="34opt3" name="qn34" value="assert">assert
+          <input type="radio" id="34opt4" name="qn34" value="nonlocal"> nonlocal
+        </div>
+
+        <div class ="container-fluid well">
+        <p> <strong>  35. What will be the output of the following Python code?<br>
+        
+        print("Hello {0[0]} and {0[1]}".format(('foo', 'bin')))</strong> </p> 
+        
+          <input type="radio" id="35opt1" name="qn35" value=" Hello (�foo�, �bin�) and (�foo�, �bin�)">  Hello (�foo�, �bin�) and (�foo�, �bin�)
+          <input type="radio" id="35opt2" name="qn35" value= "Error" > Error
+          <input type="radio" id="35opt3" name="qn35" value=" Hello foo and bin">  Hello foo and bin
+          <input type="radio" id="35opt4" name="qn35" value="None of the mentioned"> None of the mentioned
+        </div>
+
+         <div class ="container-fluid well">
+        <p> <strong> 36. What will be the output of the following Python program?<br>
+        
+        def foo(x):
+            x[0] = ['def']
+            x[1] = ['abc']
+            return id(x)
+        q = ['abc', 'def']
+        print(id(q) == foo(q))</strong> </p> 
+        
+          <input type="radio" id="36opt1" name="qn36" value="Error"> Error
+          <input type="radio" id="36opt2" name="qn36" value= "None" > None
+          <input type="radio" id="36opt3" name="qn36" value="False"> False
+          <input type="radio" id="36opt4" name="qn36" value=" True"> True
+        </div>
+        
+        <div class ="container-fluid well">
+        <p> <strong>  37. Which module in the python standard library parses options received from the command line?</strong> </p> 
+        
+          <input type="radio" id="37opt1" name="qn37" value=" getarg"> getarg
+          <input type="radio" id="37opt2" name="qn37" value= "getopt" > getopt
+          <input type="radio" id="37opt3" name="qn37" value=" main">  main
+          <input type="radio" id="37opt4" name="qn37" value=" os">  os
+        </div>
+        
+        <div class ="container-fluid well">
+        <p> <strong>  38. What will be the output of the following Python program?<br>
+        
+        z=set('abc')
+        z.add('san')
+        z.update(set(['p', 'q']))
+        z</strong> </p> 
+        
+          <input type="radio" id="38opt1" name="qn38" value="{�a�, �c�, �c�, �p�, �q�, �s�, �a�, �n�}"> {�a�, �c�, �c�, �p�, �q�, �s�, �a�, �n�}
+          <input type="radio" id="38opt2" name="qn38" value= " {�abc�, �p�, �q�, �san�}" >  {�abc�, �p�, �q�, �san�}
+          <input type="radio" id="38opt3" name="qn38" value=" {�a�, �b�, �c�, �p�, �q�, �san�}"> {�a�, �b�, �c�, �p�, �q�, �san�}
+          <input type="radio" id="38opt4" name="qn38" value=" {�a�, �b�, �c�, [�p�, �q�], �san}">  {�a�, �b�, �c�, [�p�, �q�], �san}
+        </div>
+
+        <div class ="container-fluid well">
+        <p> <strong>  39. What arithmetic operators cannot be used with strings in Python?</strong> </p> 
+        
+          <input type="radio" id="39opt1" name="qn39" value=" *">  *
+          <input type="radio" id="39opt2" name="qn39" value= " �" >  �
+          <input type="radio" id="39opt3" name="qn39" value="  +">   +
+          <input type="radio" id="39opt4" name="qn39" value=" All of the mentioned"> All of the mentioned
+        </div>
+        
+        <div class ="container-fluid well">
+        <p> <strong>  40. What will be the output of the following Python code?<br>
+        
+        print("abc. DEF".capitalize())</strong> </p> 
+        
+          <input type="radio" id="40opt1" name="qn40" value="Abc. def"> Abc. def
+          <input type="radio" id="40opt2" name="qn40" value= "abc. def" > abc. def
+          <input type="radio" id="40opt3" name="qn40" value=" Abc. Def"> Abc. Def
+          <input type="radio" id="40opt4" name="qn40" value=" A set of programs making use of Python modules">  A set of programs making use of Python modules
+        </div>
+
+        <div class ="container">
+          <input type="submit"></input>
+        </div>
+</form>
+</body>
+</html>

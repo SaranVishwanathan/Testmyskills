@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>TestMyskills</title>
+</head>
+<body>
+    <nav class ="navbar navbar-inverse navbar-fixed-top">
+        <div class = "container-fluid">
+            <div class="navbar-header">
+                <a href="#" class ="navbar-brand">TestMYSkills</a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li class = "active"><a href="/home">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Take_myTest<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/Test">Python</a></li>
+                            <li><a href="#">MySql</a></li>
+                            <li><a href="#">HTML</a></li>
+                          </ul>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+            <ul class ="nav navbar-nav navbar-right">
+                <li><a href="/Logout"><i class="glyphicon glyphicon-log-out"></i>Logout</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <form>
+        <div class ="container-fluid well">
+    <p> <strong> 21. Which of the following functions is a built-in function in python?</strong> </p> 
+
+  <input type="radio" id="21opt1" name="qn21" value="factorial()"> factorial()
+  <input type="radio" id="21opt2" name="qn21" value= " print()" >  print()
+  <input type="radio" id="21opt3" name="qn21" value=" seed()"> seed()
+  <input type="radio" id="21opt4" name="qn21" value="sqrt()"> sqrt()
+ </div>
+
+ <div class ="container-fluid well">
+<p> <strong> 22. Which of the following is the use of id() function in python?</strong> </p> 
+
+  <input type="radio" id="22opt1" name="qn22" value="Every object doesn�t have a unique id"> Every object doesn�t have a unique id
+  <input type="radio" id="22opt2" name="qn22" value= "Id returns the identity of the object" > Id returns the identity of the object
+  <input type="radio" id="22opt3" name="qn22" value="  All of the mentioned">  All of the mentioned
+  <input type="radio" id="22opt4" name="qn22" value="None of the mentioned"> None of the mentioned
+</div>
+
+<div class ="container-fluid well">
+<p> <strong> 23. The following python program can work with ____ parameters.<br> 
+
+def f(x):
+    def f1(*args, **kwargs):
+           print("Sanfoundry")
+           return x(*args, **kwargs)
+    return f1 </strong> </p> 
+
+  <input type="radio" id="23opt1" name="qn23" value=" any number of">  any number of
+  <input type="radio" id="23opt2" name="qn23" value= " 2" >  2
+  <input type="radio" id="23opt3" name="qn23" value="0"> 0
+  <input type="radio" id="23opt4" name="qn23" value="1"> 1
+</div>
+
+<div class ="container-fluid well">
+<p> <strong> 24. What will be the output of the following Python function?<br>
+
+min(max(False,-3,-4), 2,7)</strong> </p> 
+
+  <input type="radio" id="24opt1" name="qn24" value="-4"> -4
+  <input type="radio" id="24opt2" name="qn24" value= "-3" > -3
+  <input type="radio" id="24opt3" name="qn24" value="2"> 2
+  <input type="radio" id="24opt4" name="qn24" value="False">  False
+</div>
+
+<div class ="container-fluid well">
+<p> <strong> 25. Which of the following is not a core data type in Python programming?</strong> </p> 
+
+  <input type="radio" id="25opt1" name="qn25" value="Tuples"> Tuples
+  <input type="radio" id="25opt2" name="qn25" value= "Lists" > Lists
+  <input type="radio" id="25opt3" name="qn25" value=" Class">  Class
+  <input type="radio" id="25opt4" name="qn25" value="Dictionary"> Dictionary
+</div>
+
+<div class ="container-fluid well">
+<p> <strong>  26. What will be the output of the following Python expression 
+<br>
+if x=56.236?
+
+print("%.2f"%x)</strong> </p> 
+
+  <input type="radio" id="26opt1" name="qn26" value=" 56.236">  56.236
+  <input type="radio" id="26opt2" name="qn26" value= "56.23" > 56.23
+  <input type="radio" id="26opt3" name="qn26" value="56.0000"> 56.0000
+  <input type="radio" id="26opt4" name="qn26" value="56.24">56.24
+</div>
+
+<div class ="container-fluid well">
+<p> <strong>  27. Which of these is the definition for packages in Python?</strong> </p> 
+
+  <input type="radio" id="27opt1" name="qn27" value="A set of main modules"> A set of main modules
+  <input type="radio" id="27opt2" name="qn27" value= "A folder of python modules" > A folder of python modules
+  <input type="radio" id="27opt3" name="qn27" value=" A number of files containing Python definitions and statements">  A number of files containing Python definitions and statements
+  <input type="radio" id="27opt4" name="qn27" value=" A set of programs making use of Python modules">  A set of programs making use of Python modules
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong> 28. What will be the output of the following Python function?<br>
+
+
+len(["hello",2, 4, 6])</strong> </p> 
+
+  <input type="radio" id="28opt1" name="qn28" value=" Error">  Error
+  <input type="radio" id="28opt2" name="qn28" value= " 6" >  6
+  <input type="radio" id="28opt3" name="qn28" value="3">3
+  <input type="radio" id="28opt4" name="qn28" value="4"> 4
+</div>
+
+<div class ="container-fluid well">
+<p> <strong> 29. What will be the output of the following Python code snippet?<br>
+
+z=set('abc$de')
+'a' in z </strong> </p> 
+
+  <input type="radio" id="29opt1" name="qn29" value="Error"> Error
+  <input type="radio" id="29opt2" name="qn29" value= "True" > True
+  <input type="radio" id="29opt3" name="qn29" value="False"> False
+  <input type="radio" id="29opt4" name="qn29" value="No output"> No output
+</div>
+
+<div class ="container-fluid well">
+<p> <strong> 30. What is the order of namespaces in which Python looks for an identifier?</strong> </p> 
+
+  <input type="radio" id="30opt1" name="qn30" value="Python first searches the built-in namespace, then the global namespace and finally the local namespace"> Python first searches the built-in namespace, then the global namespace and finally the local namespace
+  <input type="radio" id="30opt2" name="qn30" value= " Python first searches the built-in namespace, then the local namespace and finally the global namespace" >  Python first searches the built-in namespace, then the local namespace and finally the global namespace
+  <input type="radio" id="30opt3" name="qn30" value=" Python first searches the local namespace, then the global namespace and finally the built-in namespace"> Python first searches the local namespace, then the global namespace and finally the built-in namespace
+  <input type="radio" id="30opt4" name="qn30" value="Python first searches the global namespace, then the local namespace and finally the built-in namespace"> Python first searches the global namespace, then the local namespace and finally the built-in namespace
+</div>
+ 
+<div class ="container">
+  <input type="submit"></input>
+</div>
+
+</form>
+</body>
+</html>

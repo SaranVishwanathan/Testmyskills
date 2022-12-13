@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>TestMyskills</title>
+</head>
+<body>
+    <nav class ="navbar navbar-inverse navbar-fixed-top">
+        <div class = "container-fluid">
+            <div class="navbar-header">
+                <a href="#" class ="navbar-brand">TestMYSkills</a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li class = "active"><a href="/home">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Take_myTest<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/Test">Python</a></li>
+                            <li><a href="#">MySql</a></li>
+                            <li><a href="#">HTML</a></li>
+                          </ul>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+            <ul class ="nav navbar-nav navbar-right">
+                <li><a href="/Logout"><i class="glyphicon glyphicon-log-out"></i>Logout</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br> 
+    
+    <div class ="container-fluid well">
+  <p> <strong>  41. Which of the following statements is used to create an empty set in Python?</strong> </p> 
+
+  <input type="radio" id="41opt1" name="qn41" value=" ( )">  ( )
+  <input type="radio" id="41opt2" name="qn41" value= "[ ]" > [ ]
+  <input type="radio" id="41opt3" name="qn41" value="{ }"> { }
+  <input type="radio" id="41opt4" name="qn41" value="set()"> set()
+</div>
+
+<div class ="container-fluid well">
+<p> <strong>  42. What will be the value of �result� in following Python program?<br>
+
+list1 = [1,2,3,4]
+list2 = [2,4,5,6]
+list3 = [2,6,7,8]
+result = list()
+result.extend(i for i in list1 if i not in (list2+list3) and i not in result)
+result.extend(i for i in list2 if i not in (list1+list3) and i not in result)
+result.extend(i for i in list3 if i not in (list1+list2) and i not in result) </strong> </p> 
+
+  <input type="radio" id="42opt1" name="qn42" value="[1, 3, 5, 7, 8]"> [1, 3, 5, 7, 8]
+  <input type="radio" id="42opt2" name="qn42" value= " [1, 7, 8]" >  [1, 7, 8]
+  <input type="radio" id="42opt3" name="qn42" value=" [1, 2, 4, 7, 8]"> [1, 2, 4, 7, 8]
+  <input type="radio" id="42opt4" name="qn42" value=" error">  error
+</div>
+
+<div class ="container-fluid well">
+<p> <strong>  43. To add a new element to a list we use which Python command?</strong> </p> 
+
+  <input type="radio" id="43opt1" name="qn43" value=" list1.addEnd(5)">  list1.addEnd(5)
+  <input type="radio" id="43opt2" name="qn43" value= "list1.addLast(5)" >list1.addLast(5)
+  <input type="radio" id="43opt3" name="qn43" value="list1.append(5)"> list1.append(5)
+  <input type="radio" id="43opt4" name="qn43" value=" list1.add(5)"> list1.add(5)
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>44.What is the maximum possible length of an identifier in Python?</strong> </p> 
+
+  <input type="radio" id="44opt1" name="qn44" value="79 characters">79 characters
+  <input type="radio" id="44opt2" name="qn44" value= " 31 characters" >  31 characters
+  <input type="radio" id="44opt3" name="qn44" value="63 characters">   63 characters
+  <input type="radio" id="44opt4" name="qn44" value=" none of the mentioned">   none of the mentioned
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong> 45. What will be the output of the following Python program?<br>
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(0)</strong> </p> 
+
+  <input type="radio" id="45opt1" name="qn45" value=" error">  error
+  <input type="radio" id="45opt2" name="qn45" value= " 0 1 2 0" >  0 1 2 0
+  <input type="radio" id="45opt3" name="qn45" value="  0 1 2">   0 1 2
+  <input type="radio" id="45opt4" name="qn45" value="  none of the mentioned">  none of the mentioned
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>  46. What will be the output of the following Python code?<br>
+
+x = 'abcd'
+for i in range(len(x)):
+    print(i)</strong> </p> 
+
+  <input type="radio" id="46opt1" name="qn46" value="error"> error
+  <input type="radio" id="46opt2" name="qn46" value= "1 2 3 4" >1 2 3 4
+  <input type="radio" id="46opt3" name="qn46" value=" a b c d"> a b c d
+  <input type="radio" id="46opt4" name="qn46" value="0 1 2 3"> 0 1 2 3
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>  47. What will be the output of the following Python code?<br>
+
+def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)</strong> </p> 
+
+  <input type="radio" id="47opt1" name="qn47" value="error, there is more than one return statement in a single try-finally block"> error, there is more than one return statement in a single try-finally block
+  <input type="radio" id="47opt2" name="qn47" value= "3" > 3
+  <input type="radio" id="47opt3" name="qn47" value="2"> 2
+  <input type="radio" id="47opt4" name="qn47" value=" 1"> 1
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>  48. The process of pickling in Python includes ____________</strong> </p> 
+
+  <input type="radio" id="48opt1" name="qn48" value="conversion of a Python object hierarchy into byte stream"> conversion of a Python object hierarchy into byte stream
+  <input type="radio" id="48opt2" name="qn48" value= " conversion of a datatable into a list" >  conversion of a datatable into a list
+  <input type="radio" id="48opt3" name="qn48" value="  conversion of a byte stream into Python object hierarchy">   conversion of a byte stream into Python object hierarchy
+  <input type="radio" id="48opt4" name="qn48" value=" conversion of a list into a datatable">   conversion of a list into a datatable
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>  49. What will be the output of the following Python code?<br>
+
+x = [[0], [1]]
+print((' '.join(list(map(str, x))),)) </strong> </p> 
+
+  <input type="radio" id="49opt1" name="qn49" value=" 01">  01
+  <input type="radio" id="49opt2" name="qn49" value= " [0] [1]" > [0] [1]
+  <input type="radio" id="49opt3" name="qn49" value=" (�01�)">  (�01�)
+  <input type="radio" id="49opt4" name="qn49" value=" (�[0] [1]�,)">  (�[0] [1]�,)
+</div>
+
+
+<div class ="container-fluid well">
+<p> <strong>  50.Which of the following is the use of id() function in python?</strong> </p> 
+
+  <input type="radio" id="50opt1" name="qn50" value=" Every object in Python doesn�t have a unique id">  Every object in Python doesn�t have a unique id
+  <input type="radio" id="50opt2" name="qn50" value= " In Python Id function returns the identity of the object" > In Python Id function returns the identity of the object
+  <input type="radio" id="50opt3" name="qn50" value="  None of the mentioned">  None of the mentioned
+  <input type="radio" id="50opt4" name="qn50" value=" All of the mentioned"> All of the mentioned
+</div>
+
+
+<div class ="container">
+  <input type="submit"></input>
+</div>
+
+</form>
+</body>
+</html>
