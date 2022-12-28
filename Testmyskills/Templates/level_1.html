@@ -38,17 +38,18 @@
     <br>
     <br>
 
-    <form>
+    <form method="POST">
+      {% csrf_token %}
 
         <div class ="container-fluid well">
         <p> <strong> 1.What is the maximum length of a Python identifier?</strong> </p> 
          
           <input type="radio" id="1opt1" name="qn1" value="32"> 32
           <input type="radio" id="1opt2" name="qn1" value= "16" > 16
-          <input type="radio" id="1opt3" name="qn1" value=" 128">  128
+          <input type="radio" id="1opt3" name="qn1" value="128">  128
           <input type="radio" id="1opt4" name="qn1" value=" No fixed length is specified">   No fixed length is specified
         </div>
-         
+         <!--
          <div class ="container-fluid well">
         <p> <strong>  2. What will be the output of the following code snippet?<br>
         
@@ -142,10 +143,11 @@
           <input type="radio" id="10opt3" name="qn10" value=" It provides a convenient way of associating documentation with Python modules, functions, classes, and methods">  It provides a convenient way of associating documentation with Python modules, functions, classes, and methods
           <input type="radio" id="10opt4" name="qn10" value="All of the mentioned"> All of the mentioned
         </div>
-        
+        -->
         <div class ="container">
           <input type="submit"></input>
         </div>
+        
         </form>
     </body>
     </html>

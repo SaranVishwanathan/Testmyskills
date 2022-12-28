@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
+from controls.models import Levelone_assessment, LvloneForm
+from django.http import HttpResponse
 
 def registration(request):
     if request.method=='POST':
@@ -44,7 +46,15 @@ def Test(request):
     return render(request,'Test.html')
 
 def level_1(request):
-    return render(request,'level_1.html')
+    if request.method == 'POST':
+        print(request.POST, 8888888888)
+        form = LvloneForm(request.POST)
+        print(form)
+        form.save()
+        return HttpResponse('Thanks for submitting your answer')
+        
+    else:    
+        return render(request,'level_1.html')
 
 def level_2(request):
     return render(request,'level_2.html')
